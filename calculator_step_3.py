@@ -1,4 +1,4 @@
-operations = ('x', '+', '-', '/', '^')
+operations = ('x', '+', '-', '/', '^', '%')
 symbol=''
 
 with open("step_3.txt", 'r') as calcs:
