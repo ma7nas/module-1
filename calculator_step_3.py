@@ -1,4 +1,4 @@
-operations = ('x', '+', '-', '/')
+operations = ('x', '+', '-', '/', '^')
 symbol=''
 
 with open("step_3.txt", 'r') as calcs:
@@ -18,6 +18,8 @@ while True:
         b = string_list[4] 
         if symbol == 'x':
             symbol = '*'
+        if symbol == '^':
+            symbol = '**'
         calc = a + ' ' + symbol + ' ' + b
         try:
             line_number = int(eval(calc))
